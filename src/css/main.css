@@ -307,6 +307,7 @@ Sidebar
 .show-sidebar {
   opacity: 1;
   transform: translateX(0);
+  background-color: var(--clr-primary-10);
 }
 .sidebar-links li {
   opacity: 0;
