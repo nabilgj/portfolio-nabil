@@ -416,6 +416,7 @@ Hero
   padding-top: -5rem;
   height: 100vh;
   background: var(--clr-primary-10);
+  background: black;
   position: relative;
 }
 .underline {
