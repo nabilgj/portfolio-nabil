@@ -49,7 +49,7 @@ const Hero = () => {
           >
             <div className={matchesSM ? "" : "underline"}></div>
             <Typography variant="h1"> Nabil Ahmed </Typography>
-            <Typography variant="h2"> I am MERN Stack Developer</Typography>
+            <Typography variant="h2"> MERN Stack Developer</Typography>
             <a
               href={resumeNabil}
               target="_blank"
