@@ -4,19 +4,17 @@ import { Link } from "gatsby"
 import { graphql, useStaticQuery } from "gatsby"
 import SocialLinks from "../constants/socialLinks"
 import BikeGuy from "./bikeguy"
-import resumeNabil from "../assets/NabilAhmed-Resume.pdf"
+import resumeNabil from "../others/NabilAhmed-Resume.pdf"
 
 import Grid from "@material-ui/core/Grid"
 import Typography from "@material-ui/core/Typography"
 import useMediaQuery from "@material-ui/core/useMediaQuery"
-import Hidden from "@material-ui/core/Hidden"
 
 import { makeStyles, useTheme } from "@material-ui/core/styles"
 
-const useStyles = makeStyles(theme => ({}))
+// const useStyles = makeStyles(theme => ({}))
 
 const Hero = () => {
-  const classes = useStyles()
   const theme = useTheme()
   const matchesSM = useMediaQuery(theme.breakpoints.down("sm"))
   const matchesMD = useMediaQuery(theme.breakpoints.down("md"))
@@ -28,14 +26,14 @@ const Hero = () => {
   } = useStaticQuery(query)
 
   return (
-    <Grid container direction="column" className="hero">
+    <Grid container direction="column" className="hero" id="home">
       <Grid
         item
         container
         direction={matchesSM ? "column" : "row"}
         alignItems="center"
         justify="center"
-        style={{ marginTop: matchesSM ? "2rem" : 0 }}
+        style={{ marginTop: matchesSM ? "4rem" : 0 }}
       >
         <Grid
           item
@@ -65,7 +63,7 @@ const Hero = () => {
         {/* <Image fluid={fluid} className="hero-img" /> */}
         <Grid
           item
-          style={{ zIndex: 100, marginTop: matchesSM ? "1rem" : "5rem" }}
+          style={{ zIndex: 100, marginTop: matchesSM ? "-2rem" : "5rem" }}
         >
           <BikeGuy />
         </Grid>
@@ -78,7 +76,7 @@ const Hero = () => {
 
 const query = graphql`
   {
-    file(relativePath: { eq: "hero-img.png" }) {
+    file(relativePath: { eq: "nabilimage.jpg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid

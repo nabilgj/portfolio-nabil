@@ -1,14 +1,18 @@
 import { createMuiTheme } from "@material-ui/core/styles"
 
 const arcBlue = "#114357"
+const arcLightBlue = "#0e7c86"
 const arcPink = "#F29492"
 const arcGrey = "#868686"
+const arcWhite = "#fff"
 
 const theme = createMuiTheme({
   palette: {
     common: {
-      blue: arcBlue,
+      darkBlue: arcBlue,
+      lightBlue: arcLightBlue,
       pink: arcPink,
+      white: arcWhite,
     },
     primary: {
       main: arcBlue,
@@ -34,7 +38,7 @@ const theme = createMuiTheme({
     h1: {
       fontFamily: "Raleway",
       fontWeight: 700,
-      fontSize: "4rem",
+      fontSize: "3rem",
       color: arcBlue,
       lineHeight: 1.5,
     },
@@ -43,36 +47,25 @@ const theme = createMuiTheme({
       fontSize: "1.5rem",
       color: arcBlue,
     },
-    h4: {
+    h3: {
       fontFamily: "Raleway",
-      fontSize: "1.75rem",
+      fontSize: "1.5rem",
       color: arcBlue,
       fontWeight: 700,
     },
-    h6: {
-      fontWeight: 500,
-      fontFamily: "Raleway",
-      color: arcBlue,
-      lineHeight: 1,
-    },
     subtitle1: {
-      fontSize: "1.25rem",
+      fontSize: "1rem",
       fontWeight: 300,
-      color: arcGrey,
-    },
-    subtitle2: {
-      fontSize: "1.25rem",
-      fontWeight: 300,
-      color: "white",
+      color: arcBlue,
     },
     body1: {
-      fontSize: "1.25rem",
-      color: arcGrey,
+      fontSize: "1rem",
+      color: arcBlue,
       fontWeight: 300,
     },
     caption: {
       fontSize: "1rem",
-      color: arcGrey,
+      color: arcBlue,
       fontWeight: 300,
     },
     learnButton: {
